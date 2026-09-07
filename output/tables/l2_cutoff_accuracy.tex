@@ -1,0 +1,39 @@
+\begin{table}[!h]
+\centering
+\caption{\label{tab:l2_accuracy}Accuracy of Twitter-based ideology cutoffs against voter-file party registration (matched voters)}
+\centering
+\begin{threeparttable}
+\begin{tabular}[t]{lrrrrrrr}
+\toprule
+\multicolumn{1}{c}{ } & \multicolumn{4}{c}{Per registered party} & \multicolumn{1}{c}{All matched voters} & \multicolumn{2}{c}{Partisans only} \\
+\cmidrule(l{3pt}r{3pt}){2-5} \cmidrule(l{3pt}r{3pt}){6-6} \cmidrule(l{3pt}r{3pt}){7-8}
+Group & N & Precision & Recall & F1 & Accuracy & Accuracy & Coverage\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Single split at 0 (0.000 / +0.000)}}\\
+\hspace{1em}Democrat & 153,251 & 0.761 & 0.871 & 0.813 & 0.691 & 0.853 & 1.000\\
+\hspace{1em}Republican & 59,469 & 0.549 & 0.807 & 0.654 & 0.691 & 0.853 & 1.000\\
+\hspace{1em}Other / Non-Partisan & 49,978 & --- & 0.000 & --- & 0.691 & 0.853 & 1.000\\
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{80th pct (paper) (-0.351 / +0.045)}}\\
+\hspace{1em}Democrat & 153,251 & 0.780 & 0.800 & 0.790 & 0.668 & 0.860 & 0.930\\
+\hspace{1em}Republican & 59,469 & 0.557 & 0.801 & 0.657 & 0.668 & 0.860 & 0.930\\
+\hspace{1em}Other / Non-Partisan & 49,978 & 0.257 & 0.103 & 0.147 & 0.668 & 0.860 & 0.930\\
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{75th pct (-0.527 / +0.393)}}\\
+\hspace{1em}Democrat & 153,251 & 0.789 & 0.750 & 0.769 & 0.652 & 0.892 & 0.837\\
+\hspace{1em}Republican & 59,469 & 0.629 & 0.738 & 0.679 & 0.652 & 0.892 & 0.837\\
+\hspace{1em}Other / Non-Partisan & 49,978 & 0.266 & 0.252 & 0.259 & 0.652 & 0.892 & 0.837\\
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{70th pct (-0.673 / +0.637)}}\\
+\hspace{1em}Democrat & 153,251 & 0.796 & 0.700 & 0.745 & 0.631 & 0.904 & 0.775\\
+\hspace{1em}Republican & 59,469 & 0.660 & 0.702 & 0.680 & 0.631 & 0.904 & 0.775\\
+\hspace{1em}Other / Non-Partisan & 49,978 & 0.259 & 0.336 & 0.293 & 0.631 & 0.904 & 0.775\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\item \textit{Note: } 
+\item Matched voters carrying a Twitter-based ideology score, scored against their voter-file party registration. Ideology is the paper's own score (identical to the values used throughout the analysis). Party is the voter's registration in the L2 file; 'Other / Non-Partisan' pools non-partisan, third-party and unknown registrations and has no counterpart in the survey table. Block headings give the Democratic and Republican cutoffs. Because a single split at zero has no middle band it never leaves a voter unlabelled.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

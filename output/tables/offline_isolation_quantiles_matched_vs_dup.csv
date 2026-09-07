@@ -1,0 +1,7 @@
+group,split,1st,10th,25th,Median,75th,90th,99th,n
+Matched Voters (L2-Twitter),All voters,0.153,0.3708,0.5013,0.6427,0.7938,0.9029,0.9848,885935
+Matched Voters (L2-Twitter),Democrats,0.22658,0.416,0.5472,0.7093,0.8552,0.9355,0.9887,547308
+Matched Voters (L2-Twitter),Republicans,0.0979,0.3071,0.4443,0.5705,0.6812,0.7696,0.8658,338627
+Duplicated Matched Voters (L2-Twitter),All voters,0.073,0.3386773547,0.615,0.839,0.932,0.973,0.995,1291687
+Duplicated Matched Voters (L2-Twitter),Democrats,0.2712712713,0.583,0.7718052738,0.893,0.9497487437,0.979,0.995,992348
+Duplicated Matched Voters (L2-Twitter),Republicans,0.033,0.1143430291,0.2426395939,0.4567404427,0.65562249,0.755,0.8694779116,299339

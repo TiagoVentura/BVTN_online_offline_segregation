@@ -1,0 +1,39 @@
+\begin{table}[!h]
+\centering
+\caption{\label{tab:yougov_accuracy}Accuracy of Twitter-based ideology cutoffs against self-reported party identification (YouGov donated-Twitter panel)}
+\centering
+\begin{threeparttable}
+\begin{tabular}[t]{lrrrrrrr}
+\toprule
+\multicolumn{1}{c}{ } & \multicolumn{4}{c}{Per stated party ID} & \multicolumn{1}{c}{All respondents} & \multicolumn{2}{c}{Partisans only} \\
+\cmidrule(l{3pt}r{3pt}){2-5} \cmidrule(l{3pt}r{3pt}){6-6} \cmidrule(l{3pt}r{3pt}){7-8}
+Group & N & Precision & Recall & F1 & Accuracy & Accuracy & Coverage\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Single split at 0 (0.000 / +0.000)}}\\
+\hspace{1em}Democrat & 1,031 & 0.895 & 0.928 & 0.911 & 0.842 & 0.922 & 1.000\\
+\hspace{1em}Republican & 384 & 0.725 & 0.906 & 0.806 & 0.842 & 0.922 & 1.000\\
+\hspace{1em}Independent & 134 & --- & 0.000 & --- & 0.842 & 0.922 & 1.000\\
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{80th pct (paper) (-0.351 / +0.045)}}\\
+\hspace{1em}Democrat & 1,031 & 0.913 & 0.882 & 0.897 & 0.820 & 0.930 & 0.955\\
+\hspace{1em}Republican & 384 & 0.731 & 0.904 & 0.808 & 0.820 & 0.930 & 0.955\\
+\hspace{1em}Independent & 134 & 0.179 & 0.104 & 0.132 & 0.820 & 0.930 & 0.955\\
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{75th pct (-0.527 / +0.393)}}\\
+\hspace{1em}Democrat & 1,031 & 0.920 & 0.840 & 0.878 & 0.793 & 0.957 & 0.886\\
+\hspace{1em}Republican & 384 & 0.800 & 0.867 & 0.833 & 0.793 & 0.957 & 0.886\\
+\hspace{1em}Independent & 134 & 0.156 & 0.224 & 0.184 & 0.793 & 0.957 & 0.886\\
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{70th pct (-0.673 / +0.637)}}\\
+\hspace{1em}Democrat & 1,031 & 0.921 & 0.790 & 0.850 & 0.754 & 0.964 & 0.829\\
+\hspace{1em}Republican & 384 & 0.821 & 0.826 & 0.823 & 0.754 & 0.964 & 0.829\\
+\hspace{1em}Independent & 134 & 0.133 & 0.276 & 0.179 & 0.754 & 0.964 & 0.829\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\item \textit{Note: } 
+\item Nationally representative YouGov panel of respondents who donated their Twitter data. Ideology is the paper's own score (identical to the values used throughout the analysis). Party ID is the respondent's modal answer across the eleven panel waves (1-3 Democrat, 4 Independent, 5-7 Republican). Block headings give the Democratic and Republican cutoffs. Because a single split at zero has no middle band it never predicts Independent.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
